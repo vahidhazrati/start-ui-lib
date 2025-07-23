@@ -143,7 +143,11 @@
     "wrap-ansi-cjs": "^8.0.0",
     "ws": "^8.18.3",
     "yallist": "^5.0.0",
-    "yocto-queue": "^1.2.1"
+    "yocto-queue": "^1.2.1",
+     "eslint": "^9.31.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-tailwindcss": "^3.18.2",
+    "prettier": "^3.6.2"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^9.0.18",
@@ -158,16 +162,22 @@
     "@vitest/browser": "^3.2.4",
     "jsdom": "^26.1.0",
     "playwright": "^1.54.1",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+     "eslint": "^9.31.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-tailwindcss": "^3.18.2",
+    "prettier": "^3.6.2"
   },
   "scripts": {
     "test": "vitest",
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --ext .ts,.tsx",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+  "format": "prettier --write ."
+
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,6 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "plugins": ["react", "tailwindcss"],
+  "env": { "browser": true, "es2021": true },
+  "settings": { "react": { "version": "detect" } }
+}
